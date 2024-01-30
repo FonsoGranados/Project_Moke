@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡MOKEPÓN!</title>
+    <link rel="stylesheet" href="./Styles.css">
+</head>
+<body>
+    <div class="section-container" id="Seleccionar_Mokepon">
+        <h1 class="titulo">¡MOKEPÓN!</h1>
+        <h2 class="subtitulo">Elige tu Mokepón:</h2>
+        <select id="seleccionMokepon">
+            <option value=" "> </option>
+            <optgroup label="Agua">
+                <option value="hipodoge">Hipodoge 💧</option>
+                <option value="suggles">Suggles 💧</option>
+            </optgroup>
+            <optgroup label="Fuego">
+                <option value="ratigüeya">Ratigüeya 🔥</option>
+                <option value="kailamor">Kailamor 🔥</option>
+            </optgroup>
+            <optgroup label="Tierra">
+                <option value="capipepo">Capipepo 🌱</option>
+                <option value="todd">Todd 🌱</option>
+            </optgroup>
+            <optgroup label="Híbrido">
+                <option value="tucapalma">Tucapalma 💧🌱</option>
+                <option value="pydos">Pydos 🔥🌱</option>
+            </optgroup>
+        </select>
+
+        <button id="boton_Mokepon">Seleccionar</button>
+
+        <div class="jugador-container">
+            <div class="mokepon-container" id="imagenJugadorContainer">
+                <div class="mokepon-info">
+                    <div class="nombre-mokepon" id="mokepon_jugador"></div>
+                </div>
+                <img src="./Mokepon/imagenJugador.png" alt=" " class="imagen-mokepon" id="imagenJugador">
+                <div class="vidas" id="vidas-jugador"> </div>
+            </div>
+            
+            <div class="mokepon-container" id="imagenMaquinaContainer">
+                <div class="mokepon-info">
+                    <div class="nombre-mokepon" id="mokepon_ajeno"></div>
+                </div>
+                <img src="./Enemigo/imagenMaquina.png" alt=" " class="imagen-mokepon" id="imagenMaquina">
+                <div class="vidas" id="vidas-enemigo"> </div>
+            </div>
+        </div>
+
+        <div id="Seleccionar_Ataque" style="display: none;">
+            <p class="ataques">
+                <button id="boton_fuego">Fuego 🔥</button>
+                <button id="boton_agua">Agua 💧</button>
+                <button id="boton_tierra">Tierra 🌱</button>
+            </p>
+        </div>
+    </div>
+
+    <div class="section-container" id="mensajes"> </div>
+
+    <div class="section-container" id="boton-reiniciar" style="display: none;">
+        <button>Reiniciar</button>
+    </div>
+
+    <script src="./mokepon.js"></script>
+</body>
+</html>
